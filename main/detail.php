@@ -131,7 +131,7 @@ if(mysqli_num_rows($query)==0)
 	</div>
   </div>
   <div class="card-footer d-print-none">
-    <a href="index.php?aksi=pesan" class="btn btn-primary">Buat Pesanan Baru</a>
+    <a href="../pemesanan.php?aksi=pesan" class="btn btn-primary">Buat Pesanan Baru</a>
 	<a href="#" onclick="window.print()" class="btn btn-success">Cetak</a>
   </div>
 </div>
