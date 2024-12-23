@@ -89,7 +89,9 @@ if(mysqli_num_rows($query)==0)
       <td><?=$detail['hp_pemesan']?></td>
       <td><?=$detail['waktu_wisata']?></td>
       <td><?=$detail['total_tagihan']?></td>
-      <td><a href="index.php?aksi=detail&id_pemesanan=<?=$detail['id_pemesanan']?>">Detail</a> <a href="index.php?aksi=edit&id_pemesanan=<?=$detail['id_pemesanan']?>">Edit</a> <a href="index.php?aksi=hapus&id_pemesanan=<?=$detail['id_pemesanan']?>">Hapus</a></td>
+      <td><a href="detail.php?id_pemesanan=<?=$detail['id_pemesanan']?>">Detail</a> 
+      <a href="index.php?aksi=edit&id_pemesanan=<?=$detail['id_pemesanan']?>">Edit</a> 
+      <a href="hapus.php?id_pemesanan=<?=$detail['id_pemesanan']?>">Hapus</a></td>
     </tr>
         <?php
         $co++;
