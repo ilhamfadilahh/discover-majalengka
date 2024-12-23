@@ -47,7 +47,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="pemesanan.php">Pemesanan</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="main/daftar.php">Daftar Pemesanan</a></li>
                 </ul>
             </div>
         </div>
@@ -59,7 +59,7 @@
     </div>
     <main class="flex-shrink-0">
         <div class="container">
-          <form method="post" action="proses.php">
+          <form method="post" action="lib/proses.php">
       <div class="card mt-2">
         <div class="card-header bg-dark text-white">
           Travel Majalengka
