@@ -62,7 +62,7 @@
           <form method="post" action="lib/proses.php">
       <div class="card mt-2">
         <div class="card-header bg-dark text-white">
-          Travel Majalengka
+          FORM PEMESANAN
         </div>
         <div class="card-body">
           <div class="mb-3">

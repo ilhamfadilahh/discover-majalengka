@@ -67,18 +67,18 @@ if(mysqli_num_rows($query)==0)
     $detail = mysqli_fetch_row($query);
 ?>
 <h1>Daftar Pemesanan</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nama Pemesan</th>
-      <th scope="col">Nomor HP</th>
-      <th scope="col">Tanggal Berangkat</th>
-      <th scope="col">Total Tagihan</th>
-      <th scope="col">Detail</th>
+<table class="table border table-striped mt-5 container">
+  <thead style="background-color:#0a981a;">
+    <tr align="center">
+      <th class="text-white" scope="col">No</th>
+      <th class="text-white" scope="col">Nama Pemesan</th>
+      <th class="text-white" scope="col">Nomor Handphone</th>
+      <th class="text-white" scope="col">Tanggal Keberangkatan</th>
+      <th class="text-white" scope="col">Total Tagihan</th>
+      <th class="text-white" scope="col">Keterangan</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody align="center">
       <?php
       $co = 1;
       while($detail = mysqli_fetch_assoc($query)){
@@ -90,8 +90,8 @@ if(mysqli_num_rows($query)==0)
       <td><?=$detail['waktu_wisata']?></td>
       <td><?=$detail['total_tagihan']?></td>
       <td><a href="detail.php?id_pemesanan=<?=$detail['id_pemesanan']?>">Detail</a> 
-      <a href="index.php?aksi=edit&id_pemesanan=<?=$detail['id_pemesanan']?>">Edit</a> 
-      <a href="hapus.php?id_pemesanan=<?=$detail['id_pemesanan']?>">Hapus</a></td>
+      <a class="text-warning" href="index.php?aksi=edit&id_pemesanan=<?=$detail['id_pemesanan']?>">Edit</a> 
+      <a class="text-danger" href="hapus.php?id_pemesanan=<?=$detail['id_pemesanan']?>">Hapus</a></td>
     </tr>
         <?php
         $co++;

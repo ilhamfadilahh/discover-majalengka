@@ -47,7 +47,7 @@
                     <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="../pemesanan.php">Pemesanan</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="main/daftar.php">Daftar Pemesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="daftar.php">Daftar Pemesanan</a></li>
                 </ul>
             </div>
         </div>
@@ -74,7 +74,7 @@ if(mysqli_num_rows($query)==0)
     <form method="post" action="lib/proses.php">
 <div class="card mt-2">
   <div class="card-header bg-dark text-white">
-    Detail Pemesanan Paket Wisata #<?=$detail[0]?>
+    Invoice <?=$detail[0]?>
   </div>
   <div class="card-body">
 	<div class="mb-3">
